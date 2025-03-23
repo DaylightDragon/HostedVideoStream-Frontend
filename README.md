@@ -9,7 +9,12 @@ if ($http_authorization != "YOUR_SECRET_TOKEN") {
 
 Where you can put absolutely any character combination as a token. It serves as some basic protection from random people, so you can be sure the stream isn't being watched by random web scanner bots (idk) or someone who just knows your IP and the port. Additionally you can change the port in the `compose.yml` file in the `Docker repository`.  
 
+### Ports to open on your router
+
+You only need to open the Frontend's port, which is 5220 by default
+
 ### Usage
+
 You have the player in the center of the page and a **button on top-right**.  
 To enter the token, you need to:  
 1. Click the button  
@@ -41,3 +46,6 @@ npm run dev
 ```
 
 2. Follow the instructions in [Docker & server part](https://github.com/DaylightDragon/HostedVideoStream-Docker)    
+
+## Important note
+There is unique info in both repositories, so read through both of them to not have questions.  
