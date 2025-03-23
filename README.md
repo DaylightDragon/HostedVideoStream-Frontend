@@ -2,7 +2,9 @@
 
 ## Description
 This is a project for those who want to just stream their screen to their friends with their usual OBS settings straight from OBS itself. This also has a password/token protection.  
-You need to specify tn in the [Docker & server part](https://github.com/DaylightDragon/HostedVideoStream-Docker) in `nginx.conf` at the line:
+
+# Token protection setup
+You need to specify the token in the [Docker & server part](https://github.com/DaylightDragon/HostedVideoStream-Docker) in `nginx.conf` at the line:
 ```
 if ($http_authorization != "YOUR_SECRET_TOKEN") {
 ```
@@ -11,7 +13,7 @@ Where you can put absolutely any character combination as a token. It serves as 
 
 ### Ports to open on your router
 
-You only need to open the Frontend's port, which is 5220 by default
+You **only need to open the Frontend's port**, which is 5220 by default
 
 ### Usage
 
